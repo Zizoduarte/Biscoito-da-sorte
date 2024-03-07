@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-page: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  --bg-screen: #FFF;
+  --color-text: #34355B;
+  --bg-container-text: #E4EDF1;
+  --color-container-text: #000;
+  --bg-button: #FF9500;
+  --color-button-text: #FFFFFF;
+  --text-font: "Montserrat", sans-serif;
+  --text-font-container: "Dancing Script", cursive;
+
+
+
+}
+
+body{
+  max-width: 151rem;
+  height: 100vh;
+  background: var(--bg-page);
+  background-repeat: no-repeat;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+body, button, .textscreen1 {
+  font-family: var(--text-font);
+}
+
+.hide {
+  display: none;
+}
+
+.screen1, .screen2 {
+  background: var(--bg-screen);
+  width: 42.8rem;
+  border-radius: .5rem;
+  
+
+}
+
+.screen1 {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+}
+
+h1 {
+  max-width: 25.8rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-text);
+  margin-bottom: 1.4rem;
+}
+
+.textscreen1{
+  color: var(--color-text);
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.img-first {
+  max-width: 24.8rem;
+  margin: 0 auto;
+  text-align: center;
+  text-align: center;
+  padding: 6.424px 9.73px 1.786px 5.714px;
+  cursor: pointer;
+  
+}
+
+.img-first:hover {
+  animation: rotate-center 0.1s ease-in-out backwards;
+
+}
+
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(30);
+            transform: rotate(30);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(40);
+            transform: rotate(40);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+
+/* screen2 */
+
+.screen2 {
+  height: 56rem;
+  padding: 4.8rem 6.4rem;
+}
+
+h2 {
+  max-width: 29.7rem;
+  text-align: center;
+  margin: 0 auto 1.7rem;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  max-width: 29.3rem;
+  height: 10.7rem;
+  margin: 0 auto 6rem;
+  background: var(--bg-container-text);
+  animation: scale-up-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
+}
+
+@-webkit-keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 80% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+@keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+
+
+p {
+  color: var(--color-container-text);
+  max-width: 27.3rem;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: var(--text-font-container);
+  padding: 1.1rem;
+  text-align: center;
+}
+
+.second-img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button-open {
+  margin: 6.5rem;
+  text-align: center;
+}
+
+button {
+  padding: 1.6rem;
+  border: none;
+  background: var(--bg-button);
+  color: var(--color-button-text);
+  border-radius: .4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+  transition: background 2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eaab54;
+}
